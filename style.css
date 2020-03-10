@@ -57,3 +57,110 @@ nav {
   font-style: italic;
   font-weight: 50;
 }
+
+#latest-articles {
+  position: relative;
+}
+
+#latest-articles > h1 {
+  position: absolute;
+  z-index: 1;
+  text-align: center;
+  width: 10em;
+  font-family: 'Fjalla One', sans-serif;
+  background-color: aliceblue;
+  transform: translate(50%, 10%);
+}
+
+#article-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  color: aliceblue;
+}
+
+.latest-articles-tile {
+  width: 49.5vw;
+  height: 80vh;
+  display: grid;
+  grid-template-rows: 45% 25% 20% 5%;
+}
+
+.head-articles {
+  align-self: end;
+  font-family: 'Fjalla One', sans-serif;
+}
+
+.pic-author {
+  width: 4.5rem;
+  height: 4.5rem;
+  background-color: rgb(48, 48, 48);
+  float: left;
+  margin-left: 4em;
+}
+
+.main-name {
+  font-size: 1.5em;
+  line-height: 2.675;
+  font-weight: 500;
+  margin-left: 0.5em;
+  margin-right: 0.2em;
+}
+
+.small {
+  font-size: 1.2em;
+  line-height: 1.675;
+  font-weight: 0;
+}
+
+.quote-wrapper {
+  margin-left: 4em;
+  margin-right: 4em;
+  margin-top: 1.5em;
+  font-family: 'Fjalla One', sans-serif;
+}
+
+.quote {
+  font-size: 2em;
+  line-height: 1.5em;
+  font-weight: 800;
+}
+
+.tags {
+  margin-left: 4em;
+  margin-right: 4em;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: 'Fjalla One', sans-serif;
+  list-style: none;
+}
+
+.tags > li {
+  margin-right: 2em;
+  font-size: 1.2em;
+  line-height: 1.675;
+  font-weight: 0;
+}
+
+.arrow {
+  width: 4em;
+  height: 2em;
+  margin-left: 4em;
+  font-family: 'Courier New', Courier, monospace;
+  align-self: start;
+}
+
+.tile-1 {
+  background-color: rgb(78, 77, 77);
+}
+
+.tile-2 {
+  background-color: rgb(85, 84, 84);
+}
+
+.tile-3 {
+  background-color: rgb(97, 97, 97);
+}
+
+.tile-4 {
+  background-color: rgb(65, 64, 64);
+}
