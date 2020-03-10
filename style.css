@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: lightgrey;
+}
+
+nav {
+  background-color: rgb(155, 155, 155);
+  display: flex;
+  justify-content: space-between;
+  height: 20vh;
+  align-items: center;
+  font-family: 'Fjalla One', sans-serif;
+}
+
+.nav-tile {
+  width: 11vw;
+  text-align: center;
+  font-size: 1.7em;
+}
+
+#nav-tile-2 {
+  width: 78vw;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@media screen and (max-width: 680px) {
+  #nav-tile-2 {
+    display: none;
+  }
+}
+
+.nav-tile-2-item {
+  background-color: rgb(191, 191, 191);
+  text-align: center;
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 5px;
+  margin: 0 5px;
+}
+
+.nav-tile-2-item :nth-child(1) {
+  font-size: 1.5em;
+  line-height: 1.675;
+}
+
+.nav-tile-2-item :nth-child(2) {
+  font-size: 0.8em;
+  line-height: 1.675;
+  font-style: italic;
+  font-weight: 50;
+}
