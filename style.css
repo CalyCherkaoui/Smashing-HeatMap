@@ -69,13 +69,33 @@ nav {
   width: 10em;
   font-family: 'Fjalla One', sans-serif;
   background-color: aliceblue;
-  transform: translate(50%, 10%);
+  left: 50%;
+  top: 2em;
+  margin-left: -5em;
 }
 
 #article-wrapper {
   display: flex;
   flex-wrap: wrap;
   color: aliceblue;
+}
+
+@media screen and (max-width: 680px) {
+
+  #article-wrapper {
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+  }
+
+  .latest-articles-tile {
+    box-sizing: border-box;
+    width: 100%;
+    height: 80vh;
+    display: grid;
+    grid-template-rows: 45% 25% 20% 5%;
+  }
+
 }
 
 .latest-articles-tile {
