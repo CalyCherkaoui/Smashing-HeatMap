@@ -70,7 +70,7 @@ nav {
   font-family: 'Fjalla One', sans-serif;
   background-color: aliceblue;
   left: 50%;
-  top: 2em;
+  margin-top: 3%;
   margin-left: -5em;
 }
 
@@ -78,16 +78,26 @@ nav {
   display: flex;
   flex-wrap: wrap;
   color: aliceblue;
+  width: fit-content;
+  height: fit-content;
 }
 
 @media screen and (max-width: 680px) {
-
   #article-wrapper {
     display: flex;
     flex-direction: column;
     color: aliceblue;
   }
+}
 
+.latest-articles-tile {
+  width: 50%;
+  min-height: 80vh;
+  display: grid;
+  grid-template-rows: 45% 25% 20% 5%;
+}
+
+@media screen and (max-width: 680px) {
   .latest-articles-tile {
     box-sizing: border-box;
     width: 100%;
@@ -95,14 +105,6 @@ nav {
     display: grid;
     grid-template-rows: 45% 25% 20% 5%;
   }
-
-}
-
-.latest-articles-tile {
-  width: 49.5vw;
-  height: 80vh;
-  display: grid;
-  grid-template-rows: 45% 25% 20% 5%;
 }
 
 .head-articles {
@@ -140,9 +142,17 @@ nav {
 }
 
 .quote {
-  font-size: 2em;
-  line-height: 1.5em;
+  font-size: 40px;
+  line-height: 50px;
   font-weight: 800;
+}
+
+@media screen and (max-width: 680px) {
+  .quote {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 500;
+  }
 }
 
 .tags {
@@ -159,6 +169,13 @@ nav {
   font-size: 1.2em;
   line-height: 1.675;
   font-weight: 0;
+}
+
+@media screen and (max-width: 680px) {
+  .tags > li {
+    margin-right: 2em;
+    font-size: 10px;
+  }
 }
 
 .arrow {
