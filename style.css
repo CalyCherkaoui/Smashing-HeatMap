@@ -206,8 +206,7 @@ nav {
 #latest-posts {
   display: flex;
   flex-wrap: wrap;
-  min-height: 1458px;
-  min-width: 995px;
+  background-color: white;
 }
 
 .latest-posts-tile {
@@ -252,12 +251,12 @@ nav {
 
 #latest-posts-img-1 div,
 #latest-posts-img-2 div {
-  width: 90% ;
+  width: 90%;
   height: 100%;
   margin: 0 auto;
   background-color: rgb(109, 104, 104);
   height: 100%;
-  width: 96%
+  width: 96%;
 }
 
 #latest-posts-p {
@@ -267,9 +266,34 @@ nav {
   font-size: 12px;
 }
 
+#book-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#book-section-img {
+  height: 50%;
+  width: 40%;
+  border: 1px solid black;
+}
+
+#book-section p {
+  width: 40%;
+}
+
+#book-section h4 {
+  font-size: 12px;
+}
+
+#book-section b {
+  font-size: 25px;
+  text-align: center;
+}
 
 @media screen and (max-width: 890px) {
-
   .nav-tile {
     margin: 0 5%;
   }
@@ -330,11 +354,11 @@ nav {
   .arrow {
     display: none;
   }
-  
+
   #latest-posts {
     display: grid;
-    grid-template-columns: repeat(3,auto);
-    grid-template-rows: repeat(10,auto);
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(10, auto);
   }
 
   #latest-posts-p {
@@ -350,23 +374,29 @@ nav {
     padding: 0 1%;
   }
 
-  #latest-posts-img-1, #latest-posts-img-2 {
+  #latest-posts-img-1,
+  #latest-posts-img-2 {
     width: initial;
   }
-    .latest-posts-tile {
+
+  .latest-posts-tile {
     height: initial;
     width: initial;
   }
+
   #latest-posts {
     min-height: initial;
     min-width: initial;
   }
+
   .latest-posts-tile h1 {
     font-size: 1em;
   }
+
   .latest-posts-tile h3 {
     font-size: 1em;
   }
+
   .latest-posts-tile p {
     font-size: 1em;
   }
