@@ -78,8 +78,6 @@ nav {
   display: flex;
   flex-wrap: wrap;
   color: aliceblue;
-  width: fit-content;
-  height: fit-content;
 }
 
 /* @media screen and (max-width: 680px) {
@@ -111,6 +109,7 @@ nav {
 .head-articles {
   align-self: end;
   font-family: 'Fjalla One', sans-serif;
+  margin-top: 27%;
 }
 
 .pic-author {
@@ -204,7 +203,77 @@ nav {
   background-color: rgb(65, 64, 64);
 }
 
-@media screen and (max-width: 700px) {
+#latest-posts {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 1458px;
+  min-width: 995px;
+}
+
+.latest-posts-tile {
+  height: 60vh;
+  width: 24vw;
+  background-color: rgb(200, 200, 200);
+  padding: 0 1%;
+  display: flex;
+  flex-direction: column;
+}
+
+.latest-posts-tile h1,
+.latest-posts-tile h3,
+.latest-posts-tile p {
+  background-color: aliceblue;
+  margin: 2% 0;
+  padding: 4%;
+}
+
+.latest-posts-tile h1 {
+  font-size: 27px;
+}
+
+.latest-posts-tile h3 {
+  font-size: 14px;
+}
+
+.latest-posts-tile p {
+  font-size: 19px;
+  color: #424141;
+}
+
+#latest-posts-img-1,
+#latest-posts-img-2 {
+  width: 50vw;
+  padding: 0;
+}
+
+#latest-posts-img-1 div {
+  margin-left: 2%;
+}
+
+#latest-posts-img-1 div,
+#latest-posts-img-2 div {
+  width: 90% ;
+  height: 100%;
+  margin: 0 auto;
+  background-color: rgb(109, 104, 104);
+  height: 100%;
+  width: 96%
+}
+
+#latest-posts-p {
+  width: 100%;
+  text-align: center;
+  margin: 2%;
+  font-size: 12px;
+}
+
+
+@media screen and (max-width: 890px) {
+
+  .nav-tile {
+    margin: 0 5%;
+  }
+
   #article-wrapper {
     display: flex;
     flex-direction: column;
@@ -224,7 +293,7 @@ nav {
     z-index: 1;
     text-align: center;
     font-family: 'Fjalla One', sans-serif;
-    font-size: 14px;
+    font-size: 25px;
     background-color: aliceblue;
     left: 50%;
     margin-top: 5px;
@@ -260,5 +329,45 @@ nav {
 
   .arrow {
     display: none;
+  }
+  
+  #latest-posts {
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: repeat(10,auto);
+  }
+
+  #latest-posts-p {
+    width: 100%;
+    text-align: center;
+    margin: 2%;
+    font-size: 12px;
+    grid-column: 1 / 4;
+  }
+
+  .latest-posts-tile {
+    background-color: rgb(200, 200, 200);
+    padding: 0 1%;
+  }
+
+  #latest-posts-img-1, #latest-posts-img-2 {
+    width: initial;
+  }
+    .latest-posts-tile {
+    height: initial;
+    width: initial;
+  }
+  #latest-posts {
+    min-height: initial;
+    min-width: initial;
+  }
+  .latest-posts-tile h1 {
+    font-size: 1em;
+  }
+  .latest-posts-tile h3 {
+    font-size: 1em;
+  }
+  .latest-posts-tile p {
+    font-size: 1em;
   }
 }
