@@ -29,11 +29,11 @@ nav {
   justify-content: space-evenly;
 }
 
-@media screen and (max-width: 680px) {
+/* @media screen and (max-width: 680px) {
   #nav-tile-2 {
     display: none;
   }
-}
+} */
 
 .nav-tile-2-item {
   background-color: rgb(191, 191, 191);
@@ -82,13 +82,13 @@ nav {
   height: fit-content;
 }
 
-@media screen and (max-width: 680px) {
+/* @media screen and (max-width: 680px) {
   #article-wrapper {
     display: flex;
     flex-direction: column;
     color: aliceblue;
   }
-}
+} */
 
 .latest-articles-tile {
   width: 50%;
@@ -97,6 +97,7 @@ nav {
   grid-template-rows: 45% 25% 20% 5%;
 }
 
+/*
 @media screen and (max-width: 680px) {
   .latest-articles-tile {
     box-sizing: border-box;
@@ -105,7 +106,7 @@ nav {
     display: grid;
     grid-template-rows: 45% 25% 20% 5%;
   }
-}
+} */
 
 .head-articles {
   align-self: end;
@@ -147,13 +148,14 @@ nav {
   font-weight: 800;
 }
 
+/*
 @media screen and (max-width: 680px) {
   .quote {
     font-size: 20px;
     line-height: 20px;
     font-weight: 500;
   }
-}
+} */
 
 .tags {
   margin-left: 4em;
@@ -171,12 +173,12 @@ nav {
   font-weight: 0;
 }
 
-@media screen and (max-width: 680px) {
+/* @media screen and (max-width: 680px) {
   .tags > li {
     margin-right: 2em;
     font-size: 10px;
   }
-}
+} */
 
 .arrow {
   width: 4em;
@@ -200,4 +202,63 @@ nav {
 
 .tile-4 {
   background-color: rgb(65, 64, 64);
+}
+
+@media screen and (max-width: 700px) {
+  #article-wrapper {
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+  }
+
+  .latest-articles-tile {
+    box-sizing: border-box;
+    width: 100%;
+    height: 80vh;
+    display: grid;
+    grid-template-rows: 45% 25% 20% 5%;
+  }
+
+  #latest-articles > h1 {
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 14px;
+    background-color: aliceblue;
+    left: 50%;
+    margin-top: 5px;
+    margin-left: -5em;
+  }
+
+  .head-articles {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 12px;
+  }
+
+  .pic-author {
+    width: 2rem;
+    height: 2rem;
+    background-color: rgb(48, 48, 48);
+    float: left;
+    margin-left: 4em;
+  }
+
+  .quote {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 500;
+  }
+
+  .tags > li {
+    display: none;
+  }
+
+  #nav-tile-2 {
+    display: none;
+  }
+
+  .arrow {
+    display: none;
+  }
 }
