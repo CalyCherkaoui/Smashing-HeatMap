@@ -492,4 +492,9 @@ nav {
   .latest-posts-tile p {
     font-size: 1em;
   }
+
+  #community-links {
+    display: flex;
+    flex-direction: column;
+  }
 }
