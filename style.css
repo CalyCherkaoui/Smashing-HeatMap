@@ -333,6 +333,7 @@ nav {
   grid-area: more-links;
   font-size: 18px;
   text-align: center;
+  padding-bottom: 2%;
 }
 
 #community-links {
@@ -389,6 +390,48 @@ nav {
   font-weight: 700;
   color: rgb(51, 51, 51);
   line-height: 40px;
+}
+
+#featured-book {
+  height: 35vh;
+  background-color: rgb(155, 155, 155);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#featured-book-right {
+  float: left;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 70%;
+  margin-left: 5%;
+  color: white;
+}
+
+#book-img {
+  background-color: #424242;
+  height: 120%;
+  width: 25%;
+  margin-right: 5%;
+  margin-top: -8%;
+}
+
+#content-button {
+  background-color: white;
+  width: 25%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+
+#featured-book-right p {
+  
+  padding-bottom: 1%;
 }
 
 @media screen and (max-width: 890px) {
@@ -497,4 +540,36 @@ nav {
     display: flex;
     flex-direction: column;
   }
+  
+  #featured-book-right {
+  float: left;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 70%;
+  margin-left: 5%;
+  color: white;
+  font-size: 0.8em;
+}
+
+#book-img {
+  background-color: #424242;
+  height: 80%;
+  width: 20%;
+  margin-right: 5%;
+  margin-top: 0%;
+}
+
+#content-button {
+
+  background-color: white;
+  width: 25%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+  
 }
