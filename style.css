@@ -63,6 +63,36 @@ nav {
   position: relative;
 }
 
+.curated-posts-guide h1 {
+  width: 90%;
+  margin: 0 auto;
+  padding: 2% 0;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 1.8em;
+}
+
+footer h3 {
+  margin: 5% 0;
+}
+
+footer p {
+  width: 32%;
+  text-align: center;
+  padding: 3% 0;
+}
+
+.latest-posts-tile h1,
+.latest-posts-tile h3,
+.latest-posts-tile p {
+  background-color: aliceblue;
+  margin: 2% 0;
+  padding: 4%;
+}
+
+.latest-posts-tile h1 {
+  font-size: 27px;
+}
+
 #latest-articles > h1 {
   position: absolute;
   z-index: 1;
@@ -145,13 +175,6 @@ nav {
   font-weight: 0;
 }
 
-/* @media screen and (max-width: 680px) {
-  .tags > li {
-    margin-right: 2em;
-    font-size: 10px;
-  }
-} */
-
 .arrow {
   width: 4em;
   height: 2em;
@@ -189,18 +212,6 @@ nav {
   padding: 2% 1%;
   display: flex;
   flex-direction: column;
-}
-
-.latest-posts-tile h1,
-.latest-posts-tile h3,
-.latest-posts-tile p {
-  background-color: aliceblue;
-  margin: 2% 0;
-  padding: 4%;
-}
-
-.latest-posts-tile h1 {
-  font-size: 27px;
 }
 
 .latest-posts-tile h3 {
@@ -256,6 +267,19 @@ nav {
   line-height: 27px;
 }
 
+.text-community-head > p {
+  font-size: 22px;
+  line-height: 30px;
+  font-style: normal;
+  color: rgb(44, 44, 44);
+}
+
+.curated-posts-guide p {
+  width: 90%;
+  margin: 0 auto;
+  padding: 2% 0;
+}
+
 #book-section p {
   width: 40%;
 }
@@ -290,13 +314,6 @@ nav {
 
 .text-community-head {
   width: 60%;
-}
-
-.text-community-head > p {
-  font-size: 22px;
-  line-height: 30px;
-  font-style: normal;
-  color: rgb(44, 44, 44);
 }
 
 .text-community-head > h3 {
@@ -444,20 +461,6 @@ nav {
   color: #006fc6;
 }
 
-.curated-posts-guide p {
-  width: 90%;
-  margin: 0 auto;
-  padding: 2% 0;
-}
-
-.curated-posts-guide h1 {
-  width: 90%;
-  margin: 0 auto;
-  padding: 2% 0;
-  font-family: 'Fjalla One', sans-serif;
-  font-size: 1.8em;
-}
-
 .curated-posts-guide ul {
   width: 79%;
   margin: 0 auto;
@@ -563,6 +566,10 @@ nav {
   text-align: center;
 }
 
+footer a {
+  color: white;
+}
+
 #newsletter-bottom-p a {
   color: white;
 }
@@ -576,20 +583,6 @@ footer {
   background-color: #7f8282;
   color: white;
   font-family: Helvetica, Arial, sans-serif;
-}
-
-footer a {
-  color: white;
-}
-
-footer h3 {
-  margin: 5% 0;
-}
-
-footer p {
-  width: 32%;
-  text-align: center;
-  padding: 3% 0;
 }
 
 .footer-ul-main,
