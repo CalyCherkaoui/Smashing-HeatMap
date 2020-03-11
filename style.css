@@ -81,14 +81,12 @@ nav {
   color: aliceblue;
 }
 
-
 .latest-articles-tile {
   width: 50%;
   min-height: 80vh;
   display: grid;
   grid-template-rows: 45% 25% 20% 5%;
 }
-
 
 .head-articles {
   align-self: end;
@@ -130,7 +128,6 @@ nav {
   line-height: 50px;
   font-weight: 800;
 }
-
 
 .tags {
   margin-left: 4em;
@@ -227,12 +224,10 @@ nav {
 
 #latest-posts-img-1 div,
 #latest-posts-img-2 div {
-  width: 90%;
-  height: 100%;
-  margin: 0 auto;
-  background-color: rgb(109, 104, 104);
   height: 100%;
   width: 96%;
+  margin: 0 auto;
+  background-color: rgb(109, 104, 104);
 }
 
 #latest-posts-p {
@@ -256,6 +251,11 @@ nav {
   border: 1px solid black;
 }
 
+.text-community > p {
+  font-size: 19px;
+  line-height: 27px;
+}
+
 #book-section p {
   width: 40%;
 }
@@ -269,10 +269,8 @@ nav {
   text-align: center;
 }
 
-
-
 #person-of-the-week {
-  grid-area: person-of-the-week ;
+  grid-area: person-of-the-week;
   margin-left: auto;
   margin-right: auto;
   justify-self: center;
@@ -282,33 +280,33 @@ nav {
 }
 
 #community-img-Person {
-width: 20rem;
-height: 20rem;
-border: 1px solid gray;
-background-color: gray;
-align-self: center;
-margin-right: 2rem;
+  width: 20rem;
+  height: 20rem;
+  border: 1px solid gray;
+  background-color: gray;
+  align-self: center;
+  margin-right: 2rem;
 }
 
 .text-community-head {
   width: 60%;
 }
 
-.text-community > p {
-    font-size: 22px;
-    line-height: 30px;
-    font-style: normal;
-    color: rgb(44, 44, 44);
+.text-community-head > p {
+  font-size: 22px;
+  line-height: 30px;
+  font-style: normal;
+  color: rgb(44, 44, 44);
 }
 
-.text-community > h3{
+.text-community-head > h3 {
   font-size: 20px;
   font-weight: 400;
-  padding-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 
 #community-1 {
- grid-area: community-1;
+  grid-area: community-1;
 }
 
 #community-2 {
@@ -333,6 +331,8 @@ margin-right: 2rem;
 
 #more-links {
   grid-area: more-links;
+  font-size: 18px;
+  text-align: center;
 }
 
 #community-links {
@@ -346,27 +346,49 @@ margin-right: 2rem;
     "community-1 community-2"
     "community-3 community-4"
     "community-5 community-6"
-    "more-links more-links"
-  ;
+    "more-links more-links";
   font-family: Arial, Helvetica, sans-serif;
   background-color: white;
 }
 
 .community-links-tile {
-  margin-left: 20px;
-  padding: 20px;
+  margin: 1rem;
   justify-self: center;
   align-self: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
-.community-links-tile > h3{
-  font-size: 20px;
-  font-weight: 400;
+.community-img {
+  flex-basis: 100%;
 }
 
-.community-links-tile > p {
+.image {
+  width: 5rem;
+  height: 5rem;
+  border: 1px solid gray;
+  background-color: gray;
+  margin-top: -7em;
+  margin-left: 3em;
+}
+
+.text-community {
+  flex-basis: auto;
+  padding: 3rem;
+}
+
+.text-community > h3 {
   font-size: 18px;
-  line-height: 27px;
+  font-weight: 400;
+  color: rgb(102, 102, 102);
+}
+
+.text-community > h2 {
+  font-size: 30px;
+  font-weight: 700;
+  color: rgb(51, 51, 51);
+  line-height: 40px;
 }
 
 @media screen and (max-width: 890px) {
@@ -386,6 +408,10 @@ margin-right: 2rem;
     height: 80vh;
     display: grid;
     grid-template-rows: 45% 25% 20% 5%;
+  }
+
+  .latest-posts-tile h1 {
+    font-size: 1em;
   }
 
   #latest-articles > h1 {
@@ -435,6 +461,8 @@ margin-right: 2rem;
     display: grid;
     grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(10, auto);
+    min-height: initial;
+    min-width: initial;
   }
 
   #latest-posts-p {
@@ -448,25 +476,13 @@ margin-right: 2rem;
   .latest-posts-tile {
     background-color: white;
     padding: 1% 1%;
+    height: initial;
+    width: initial;
   }
 
   #latest-posts-img-1,
   #latest-posts-img-2 {
     width: initial;
-  }
-
-  .latest-posts-tile {
-    height: initial;
-    width: initial;
-  }
-
-  #latest-posts {
-    min-height: initial;
-    min-width: initial;
-  }
-
-  .latest-posts-tile h1 {
-    font-size: 1em;
   }
 
   .latest-posts-tile h3 {
