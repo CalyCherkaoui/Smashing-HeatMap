@@ -579,7 +579,62 @@ nav {
   color: white;
 }
 
+footer {
 
+  display: flex;
+  flex-direction: column;
+  height: 70vh;
+  align-items: center;
+  position: relative;
+  background-color: #7f8282;
+  color: white;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+footer a {
+  
+  color: white;
+}
+
+footer h3 {
+
+  margin: 5% 0;
+}
+
+footer p {
+
+  width: 32%;
+  text-align: center;
+  padding: 3% 0px;
+}
+
+.footer-ul-main,
+.footer-ul-second {
+
+  display: flex;
+  width: 80%;
+  color: white;
+  margin: 0.4% 0;
+  line-height: 1;
+  justify-content: center;
+  font-size: 21px;
+}
+
+.footer-ul-main li,
+.footer-ul-second li {
+  margin: 0 30px;
+}
+
+
+#footer-img {
+  
+  height: 25%;
+  width: 10%;
+  border: 1px solid #fffdfd;
+  position: absolute;
+  left: 15%;
+  bottom: 10%;
+}
 
 @media screen and (max-width: 890px) {
   .nav-tile {
