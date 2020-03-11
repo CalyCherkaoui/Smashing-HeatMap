@@ -571,10 +571,12 @@ nav {
 
 #newsletter-bottom-p {
 
+  width: 25%;
+  text-align: center;
 }
 
 #newsletter-bottom-p a {
-  
+  color: white;
 }
 
 
