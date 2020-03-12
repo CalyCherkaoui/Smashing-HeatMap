@@ -30,7 +30,6 @@ nav {
   justify-content: space-evenly;
 }
 
-
 .nav-tile-2-item {
   background-color: rgb(191, 191, 191);
   text-align: center;
@@ -353,7 +352,7 @@ footer p {
   display: grid;
   width: 100%;
   grid-template-columns: 50% 50%;
-  grid-template-rows: minmax(55vh,auto) minmax(40vh,auto) minmax(40vh,auto) minmax(40vh,auto) minmax(20vh,auto);
+  grid-template-rows: minmax(55vh, auto) minmax(40vh, auto) minmax(40vh, auto) minmax(40vh, auto) minmax(20vh, auto);
   grid-template-areas:
     "person-of-the-week person-of-the-week"
     "community-1 community-2"
@@ -469,7 +468,7 @@ footer p {
 #curated-posts {
   display: grid;
   grid-template-columns: repeat(4, auto);
-  grid-template-rows: minmax(90vh,auto) minmax(100vh,auto) minmax(30vh,auto);
+  grid-template-rows: minmax(90vh, auto) minmax(100vh, auto) minmax(30vh, auto);
   background-color: white;
 }
 
