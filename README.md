@@ -21,7 +21,7 @@ firefox index.html
 
 
 ## Demo
-https://rawcdn.githack.com/CalyCherkaoui/Smashing-HeatMap/60093f2299f22a267f8f8f56ac99fdbc9f39aff7/index.html
+https://raw.githack.com/CalyCherkaoui/Smashing-HeatMap/master/index.html
 
 
 ## Authors
